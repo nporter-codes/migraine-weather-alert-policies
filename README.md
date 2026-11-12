@@ -4,6 +4,8 @@ Public static policy and support pages for the Migraine Weather Alert version 2.
 
 English pages are canonical; Simplified Chinese pages are convenience translations. Consumer pages accurately scope the forthcoming update and do not announce global App Store availability.
 
+The annual plan may offer a **three-day free trial** when the offer is available and Apple confirms eligibility. The monthly plan has no free trial. The Apple purchase sheet shows the actual local price and terms.
+
 ## Files
 
 - `index.html` — policy/support directory
