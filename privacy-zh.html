@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="zh-Hans">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Migraine Weather Alert 的本地日记、可选 iCloud 同步、Apple 健康睡眠、区域天气与数据删除说明。">
+<meta name="theme-color" content="#101719">
+<title>隐私政策 | Migraine Weather Alert</title>
+<link rel="canonical" href="https://nporter-codes.github.io/migraine-weather-alert-policies/privacy-zh.html">
+<link rel="alternate" hreflang="en" href="https://nporter-codes.github.io/migraine-weather-alert-policies/privacy.html"><link rel="alternate" hreflang="zh-Hans" href="https://nporter-codes.github.io/migraine-weather-alert-policies/privacy-zh.html">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<a class="skip" href="#main">跳至正文</a>
+<div class="container">
+<div class="top"><a class="brand" href="index.html">Migraine Weather Alert</a><nav class="nav" aria-label="主导航"><a href="index.html">首页</a><a href="privacy-zh.html" aria-current="page">隐私</a><a href="terms-zh.html">条款</a><a href="support.html" lang="en">支持（英文）</a></nav></div>
+<main id="main"><header><p class="eyebrow">隐私政策</p><h1>您的记录，明确的选择。</h1><p class="meta">生效日期：2026年11月11日 · 服务提供方：Migraine Weather Alert</p><p class="lede">日记保存在您的设备上。可选的 iCloud 同步和 Apple 健康睡眠读取分别由您控制。</p><p class="note">本政策介绍即将推出的2.0版更新及相关天气服务。旧版本的操作入口或服务提供商可能不同。请查看已安装版本；如需了解旧版本，请联系我们。</p><p class="language">本页为简体中文便利译文，<a href="privacy.html" lang="en">英文页面</a>为正式原文。</p></header>
+<section><h2>1. 服务提供方</h2><p>Migraine Weather Alert 提供本应用及本网站。本政策中的“我们”指使用此名称提供服务的一方。支持及隐私联系邮箱：<a href="mailto:lucktuite@outlook.com">lucktuite@outlook.com</a>。无需创建应用账号。</p></section>
+<section><h2>2. 设备上的日记与设置</h2><p>应用保存您输入的症状记录和每日打卡，包括日期、时区、头痛状态、程度、您填写的持续时间、症状、用药文字、备注，以及手动睡眠、压力或饮水等可选背景信息。旧记录还可能包含您以前填写的诱因、缓解方式、影响、咖啡因、进餐、屏幕或经期信息。记录中也可能包含保存当时的区域预报背景。</p><p>偏好设置、本地区域到访信息、预报历史及恢复副本用于应用运行。天气与症状的个人对照在设备上计算。您的症状、用药和备注内容不会为了天气提醒而发送至天气后端、MET Norway 或 Firebase。</p><p>您自行决定是否导出或分享 CSV/PDF。保存在“文件”、邮件或其他应用中的副本，与本应用内部存储分开管理。</p></section>
+<section><h2>3. 可选的私有 iCloud 同步</h2><p>新安装默认关闭同步。启用后，日记、打卡记录（不含导入的 Apple 健康睡眠字段）及删除/重置标记可通过 CloudKit 保存至您 Apple 账号的私有 iCloud 数据库，不会公开。设备权限、推送令牌及订阅状态不作为日记同步。</p><p>关闭同步会停止后续应用同步，但不会删除此前已保存的 iCloud 记录；关闭前已提交的请求仍可能完成。请使用下述删除功能清除同步数据。iCloud 的可用性、安全、备份和自身保留流程由 Apple 管理。</p></section>
+<section><h2>4. Apple 健康睡眠</h2><p>经您授权且具有 Premium 权益时，应用只读取睡眠数据，不向 Apple 健康写入数据。导入的睡眠仅在设备上处理，不进入应用的 CloudKit 日记载荷、天气后端、Firebase 消息、小组件快照或 Watch 快照。</p><p>在应用中断开睡眠连接，可清除当前导入显示并停止使用该连接；也可在 Apple 健康中检查或撤销访问权限。断开连接、删除应用数据或卸载应用，不会删除 Apple 健康中的原始记录或由 Apple 管理的健康备份。</p></section>
+<section><h2>5. 位置与区域天气</h2><p>您可以不授权当前位置，直接选择城市。已收录城市可通过内置目录查找；其他地址搜索及当前位置请求可能使用 Apple 定位和地理编码服务。向天气后端发送位置前，应用会将所选地点转换为0.1度网格中心：南北方向约11公里，东西方向大小随纬度变化。区域坐标、名称和时区用于预报及提醒；应用不会发送持续、精确的 GPS 轨迹。</p><p>Cloudflare Workers 和 D1 运行天气 API、预报缓存与提醒调度。MET Norway 接收取整后的区域坐标以提供预报，不接收您的日记或每台设备的推送令牌。</p></section>
+<section><h2>6. 运行标识符与服务提供商</h2><p>天气服务使用随机安装 ID、安装凭据的哈希、App Attest 密钥标识/公钥，以及创建、删除、修订和请求状态等技术信息，用于授权请求及防止滥用。所选区域及提醒偏好可关联至该安装。偏好包括语言、敏感度、变化方向和安静时段；启用通知时，后端还使用 Firebase Cloud Messaging（FCM）令牌。</p><p>FCM 与 Apple 推送通知服务（APNs）负责传递天气通知。Firebase 消息及安装组件可能处理安装标识、设备/应用技术信息和运行诊断；Apple App Attest 帮助验证真实安装。应用不包含广告或行为分析工具，不将日记或健康数据用于广告，不出售个人信息，也不为广告跨其他公司的应用跟踪您。</p><p>提醒事件及投递操作记录包含安装/事件 ID、区域和时间信息、尝试次数与服务接收状态。服务已接收不等于已读回执，也不保证您看到提醒。网络服务商可处理 IP 地址及请求元数据用于传输和安全；后端通过短期、按小时划分的限流桶防止滥用。</p><p>Apple StoreKit 提供商品信息、购买验证及订阅权益。Apple 处理付款；应用不接收完整银行卡信息，也不向天气后端发送交易收据。</p><p>这些提供商可能依据自身条款在您所在国家或地区以外处理信息。请参阅 <a href="https://www.apple.com/legal/privacy/">Apple 隐私信息</a>、<a href="https://firebase.google.com/support/privacy">Firebase 隐私与安全说明</a>、<a href="https://www.cloudflare.com/privacypolicy/">Cloudflare 隐私政策</a>和 <a href="https://api.met.no/doc/TermsOfService">MET Norway API 条款</a>。</p></section>
+<section><h2>7. 小组件与 Apple Watch</h2><p>主屏幕小组件使用有限的共享天气快照，包含区域、预报/展望、时间、提醒偏好、单位及重置代次，不含日记或 Apple 健康睡眠。更新取决于 iOS 调度及网络。</p><p>配对 Watch 接收天气与设置快照。您在 Watch 创建的快捷记录会进入本机待发送队列，直到配对 iPhone 确认收到。“等待同步”不代表记录已到达手机。重置标记帮助防止旧待发送记录恢复已删除日记。Watch 快照不传输导入的 Apple 健康睡眠。</p></section>
+<section><h2>8. 保留时间</h2><ul><li><strong>本地日记及恢复副本：</strong>保留至您删除。免费版30天浏览范围不是删除计划，Premium 到期不会抹除旧记录。</li><li><strong>私有 iCloud 日记：</strong>保留至通过适用的应用或 Apple 操作删除。删除/重置标记可能保留，以防旧设备恢复已删除记录。</li><li><strong>监测设置与推送令牌：</strong>后端注销成功后，移除所选区域关联、提醒偏好及令牌，撤销访问并清除凭据哈希和 App Attest 公钥。待发提醒会取消，但服务商已接收的通知仍可能到达。</li><li><strong>防重放与提醒操作：</strong>删除后保留最少的安装/App Attest 密钥标记30天，用于防重放。相关运行记录先由有批次上限的维护任务清理，再移除标记。活跃安装的终态提醒操作记录通常在35天后进入可清理范围；仍活跃事件的去重信息可能保留至事件结束。维护积压可能延长实际清除时间。</li><li><strong>区域天气历史：</strong>分批清理超过35天的历史。共享区域预报不含症状记录，其他安装仍需使用时可能继续保留。</li><li><strong>服务商日志、标识符及备份：</strong>天气服务目前使用 Cloudflare Free 方案，其公开文档说明 Workers Logs 在该方案下最多保留3天。其他安全日志、服务商标识和备份按各提供商自身政策及流程处理。在全部应用数据删除流程中，应用在适用时请求删除 Firebase 消息令牌及安装标识；这不代表所有服务商系统或备份立即抹除全部副本。</li></ul><p>参考：<a href="https://developers.cloudflare.com/workers/observability/logs/workers-logs/">Cloudflare Workers Logs</a>、<a href="https://firebase.google.com/support/privacy">Firebase 隐私及保留说明</a>、<a href="https://firebase.google.com/docs/projects/manage-installations">Firebase 安装删除说明</a>。</p></section>
+<section><h2>9. 导出、删除与您的选择</h2><p>在“设置 → 数据与隐私”中，无需 Premium 即可导出全部原始日记 CSV，并选择删除范围：</p><ul><li><strong>设备及所选 iCloud 数据：</strong>清除本机应用数据，并在适用时清除当前选中的应用云端日记。旧版、未选中的私有云副本保留，导入屏障防止其在这台设备重新导入。</li><li><strong>设备及全部 iCloud 副本：</strong>还会请求移除应用旧版 iCloud 日记、设置及账号副本记录。</li></ul><p>云端删除需要网络和确认。应用先保存删除请求，使失败或中断后可按原范围重试。若删除失败或仍显示待完成，请保留应用，在联网后从“数据与隐私”重试。待完成状态不等于删除成功；应用请求完成也不保证服务商备份立即清除。</p><p>您可以拒绝当前位置、保持 iCloud 或健康连接关闭，或停用通知。单独卸载不代表后端或 iCloud 删除完成，也不会取消 Apple 订阅、删除 Apple 健康源数据或移除您另存的导出副本。</p><p>如需咨询您所在地适用的访问、更正、删除、限制处理等隐私权利，请邮件联系 <a href="mailto:lucktuite@outlook.com">lucktuite@outlook.com</a>。仅提供说明请求所需的最少信息；我们可能要求有限的核验信息。请勿发送健康备注、密码、推送令牌或安装凭据，更不要将其发布到公开网站仓库。适用的法定隐私权利仍予保留。</p></section>
+<section><h2>10. 本网站与政策更新</h2><p>本静态网站由 GitHub Pages 托管，不包含分析脚本、广告、由本站设置的 Cookie、联系表单或日记上传。GitHub 可为提供和保护网站而处理技术服务器/请求信息，包括 IP 地址；请参阅 <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub 隐私声明</a>。邮件支持通过邮件服务处理；外部链接指向对应提供商的网站与政策。</p><p>政策变化会在本页发布并更新生效日期。旧版本相关问题可邮件联系 <a href="mailto:lucktuite@outlook.com">lucktuite@outlook.com</a>。</p></section>
+</main>
+<footer><nav class="nav" aria-label="页脚导航"><a href="index.html">首页</a><a href="privacy-zh.html" aria-current="page">隐私</a><a href="terms-zh.html">条款</a><a href="support.html" lang="en">支持（英文）</a></nav><p>服务提供方：Migraine Weather Alert。天气信息与个人记录；不提供医疗建议、诊断或治疗。</p><p><a href="mailto:lucktuite@outlook.com">lucktuite@outlook.com</a> · 更新于2026年11月11日</p></footer>
+</div>
+</body>
+</html>
